@@ -5,7 +5,7 @@ import AllTasks from "../ExtraComponents/AllTasks";
 
 const AdminDashboard = () => {
   return (
-    <div h-screen w-full>
+    <div>
       <Header />
       <CreateTask />
       <AllTasks/>

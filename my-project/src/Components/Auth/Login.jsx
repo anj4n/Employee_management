@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-const Login = () => {
+const Login = ({HandleLogin}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const SubmitHandler = (event) => {
     event.preventDefault();
-    console.log(`email is ${email} and password is ${password}`);
+    HandleLogin(email,password);
     setEmail("");
     setPassword("");
   };
@@ -23,7 +23,7 @@ const Login = () => {
             onChange={(event) => {
               setEmail(event.target.value);
             }}
-            type="text"
+            type="email"
             placeholder="Enter Your Email"
             className=" bg-transparent text-white p-3 m-3 rounded-3xl border-2 outline-none border-red-600 "
           />

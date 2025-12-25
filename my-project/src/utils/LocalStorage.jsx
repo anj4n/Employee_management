@@ -1,8 +1,15 @@
 const employees = [
     {
       "id": 101,
-      "email": "e@e.com",
+      "firstName": "Arjun",
+      "email": "e1@e.com",
       "password": "123",
+      "taskCounts": {
+        "active": 3,
+        "newTask": 2,
+        "completed": 2,
+        "failed": 1
+      },
       "tasks": [
         {
           "active": true,
@@ -38,8 +45,15 @@ const employees = [
     },
     {
       "id": 102,
-      "email": "employee2@example.com",
-      "password": "emp2@123",
+      "firstName": "Priya",
+      "email": "e2@e.com",
+      "password": "123",
+      "taskCounts": {
+        "active": 2,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 2
+      },
       "tasks": [
         {
           "active": true,
@@ -75,8 +89,15 @@ const employees = [
     },
     {
       "id": 103,
-      "email": "employee3@example.com",
-      "password": "emp3@123",
+      "firstName": "Raj",
+      "email": "e3@e.com",
+      "password": "123",
+      "taskCounts": {
+        "active": 2,
+        "newTask": 2,
+        "completed": 2,
+        "failed": 1
+      },
       "tasks": [
         {
           "active": true,
@@ -112,8 +133,15 @@ const employees = [
     },
     {
       "id": 104,
-      "email": "employee4@example.com",
-      "password": "emp4@123",
+      "firstName": "Anjali",
+      "email": "e4@e.com",
+      "password": "123",
+      "taskCounts": {
+        "active": 2,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 2
+      },
       "tasks": [
         {
           "active": true,
@@ -149,8 +177,15 @@ const employees = [
     },
     {
       "id": 105,
-      "email": "employee5@example.com",
-      "password": "emp5@123",
+      "firstName": "Vikram",
+      "email": "e5@e.com",
+      "password": "123",
+      "taskCounts": {
+        "active": 2,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 2
+      },
       "tasks": [
         {
           "active": true,
@@ -186,10 +221,10 @@ const employees = [
     }
 ];
 
-
 const admin =  [{
     "id": 501,
-    "email": "admin.com",
+    "firstName" : "admin_1",
+    "email": "a@a.com",
     "password": "123"
 }];
 

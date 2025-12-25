@@ -1,6 +1,6 @@
 import React from "react";
 
-const TaskList = () => {
+const TaskList = ({data}) => {
   return (
     <div
       id="tasklist"
@@ -14,21 +14,9 @@ const TaskList = () => {
           <h3 className="text-xl ">18 december 2025</h3>
         </div>
 
-        <h2 className="font-semibold text-3xl mt-5">Complete the project</h2>
-        <p className="mt-5 text-sm wrap-break-word ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-          accusamus omnis, recusandae praesentium perferendis velit harum iusto
-          quis animi neque et cupiditate eveniet dolores officiis nemo debitis
-          non molestias soluta fugiat alias nisi obcaecati! Aut accusantium est
-          dolorem? Iure, architecto id? Iure quae minima provident ab ipsa
-          voluptatibus animi natus! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Nemo sequi unde eum. Est cupiditate reiciendis minus
-          quae magnam illo corporis possimus. Consequatur adipisci quidem
-          facilis Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Inventore, ipsa Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. Architecto reprehenderit Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Explicabo architecto accusamus, accusantium mollitia
-          eos laudantium voluptatum possimus delectus quo impedit.{" "}
+        <h2 className="font-semibold text-3xl mt-5">{data.tasks.taskTitle}</h2>
+        <p className="mt-5 text-sm wrap-break-word ">{data.tasks.taskDescription}
+         
         </p>
       </div>
 

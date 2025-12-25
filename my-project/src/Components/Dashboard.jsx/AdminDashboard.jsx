@@ -3,11 +3,11 @@ import Header from "../ExtraComponents/Header";
 import CreateTask from "../ExtraComponents/CreateTask";
 import AllTasks from "../ExtraComponents/AllTasks";
 
-const AdminDashboard = () => {
+const AdminDashboard = ({data}) => {
   return (
     <div>
-      <Header />
-      <CreateTask />
+      <Header data={data} />
+      <CreateTask  />
       <AllTasks/>
     </div>
   );

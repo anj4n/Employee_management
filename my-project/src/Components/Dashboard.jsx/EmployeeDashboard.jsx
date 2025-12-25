@@ -3,12 +3,12 @@ import Header from "../ExtraComponents/Header";
 import TaskListNo from "../ExtraComponents/TaskListNo";
 import TaskList from "../ExtraComponents/TaskList";
 
-const EmployeeDashboard = () => {
+const EmployeeDashboard = ({data}) => {
   return (
     <div>
-      <Header />
-      <TaskListNo />
-      <TaskList />
+      <Header data={data} />
+      <TaskListNo data={data} />
+      <TaskList data={data} />
     </div>
   );
 };
